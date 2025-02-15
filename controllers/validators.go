@@ -11,11 +11,11 @@ func ValidateUserRegistration(user models.Users) error {
 		return errors.New("all fields (username, password, email) are required")
 	}
 
-	if len(user.Username) < 5 {
+	if len(user.Username) <= 5 {
 		return errors.New("username must be at least 5 characters long")
 	}
 
-	if len(user.Password) < 8 {
+	if len(user.Password) <= 8 {
 		return errors.New("password must be at least 8 characters long")
 	}
 
@@ -35,11 +35,11 @@ func ValidateArticle(post models.Posts) error {
 		return errors.New("all fields (title, content, category, status) are required")
 	}
 
-	if len(post.Title) < 10 {
+	if len(post.Title) <= 10 {
 		return errors.New("title must be at least 10 characters long")
 	}
 
-	if len(post.Content) < 50 {
+	if len(post.Content) <= 50 {
 		return errors.New("content must be at least 50 characters long")
 	}
 
