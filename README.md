@@ -20,6 +20,10 @@ Run the Server
 
     go run main.go
 
+## Step to Run Frontend
+
+https://github.com/ReynardChristiansen/FE_TEST_TERRA_DISCOVER
+
 ## Endpoints
 
 - Login (POST): http://localhost:8080/login
