@@ -199,7 +199,7 @@ func GetArticles(w http.ResponseWriter, r *http.Request) {
 	}
 
 	if len(posts) == 0 {
-		sendErrorResponse(w, "No articles found", http.StatusNotFound)
+		sendErrorResponse(w, "No articles found", http.StatusOK)
 		return
 	}
 
